@@ -11,7 +11,7 @@ void operator>>(istream& in) {
     std::sscanf(input_line, "REPEAT %d [%99s", &n_repeats, program);
 
     for (size_t n_repeats = 0; n_repeats < count; n_repeats++) {
-        // TODO: call the program in here
+        program >> prog;
     }
 }
 

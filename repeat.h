@@ -7,7 +7,7 @@
 //--------Teammember 2 to complete this section (class declaration) ----------
 class repeat {
 private:
-    // TODO: how do I add the program as an attribute
+    Program prog;
 public:
     void run();
     friend void operator>>(istream& in);
