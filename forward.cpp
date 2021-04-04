@@ -15,6 +15,7 @@ void Forward::run() // maybe remove this
     glVertex2f(0.0,0.0);   //vertex 2D (x,y), as float
     glVertex2f(shift,0.0); // e.g move 5 units
     glEnd();
+    glFlush();
 }
 
 std::istream& operator>>(std::istream& in, Forward& forward) //in = user input, cin >> , e.g FORWARD 5, save into forward variables?
