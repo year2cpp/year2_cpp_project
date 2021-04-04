@@ -5,7 +5,13 @@
 #include "program.h"
 
 //--------Teammember 2 to complete this section (class declaration) ----------
-
+class repeat {
+private:
+    Program prog;
+public:
+    void run();
+    friend void operator>>(istream& in);
+}
 //----------------------------------------------------------------------------
 
 #endif /* REPEAT_H_ */

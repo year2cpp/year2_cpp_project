@@ -12,11 +12,14 @@
 #include "jump.h"
 
 class Program {
+
 public:
 	void run();
 	//--------Teammember 1 to complete this section (class declaration) ----------
-
+	std::string str;
+	float distance;
 	//----------------------------------------------------------------------------
+
 };
 
 
