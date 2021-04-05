@@ -11,7 +11,9 @@ class Left: public Command //inherits public funcs, command.h
 public:
     void run(); // virtual func run 
     friend std::istream& operator>>(std::istream& in, Left& l); //input operator
-
+private:
+    int angle;
+    char direction;
 
 };
 
