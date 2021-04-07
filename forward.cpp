@@ -4,10 +4,15 @@
 //--------Teammember 3 to complete this section (class definition) ----------
 void Forward::run() // maybe remove this
 {
+    //changes, needs old position when forward 3x after rotate ex
+    //moves forward in that angle
+    //if(forwardd == Forward;){}
+    // maybe use translate?
     GLfloat oldPos[2];
     GLfloat Pos[2]; // to be worked on
     oldPos[0] ;
     oldPos[1];
+    position =+shift;
     glBegin(GL_LINES);  // use LINE_STRIP , lines connect but not last one
     glVertex2f(0.0,0.0);   //vertex 2D (x,y), as float
     glVertex2f(shift,0.0); // e.g move 5 units
@@ -19,10 +24,11 @@ std::istream& operator>>(std::istream& in, Forward& forward) //in = user input, 
 { // new Forward obj, gives forward access to class
     //const int ShiftSize = 100; // e.g 5 units forward
     static char forwardd[10];
-    int shift=0; //initialise shift to 0
+    float shift=0.0; //initialise shift to 0
     //Forward temp;
     //int shiftSize[100];
     in >> forwardd; // gets first word up to ws
+    //in.get(); // gets white space
     in >> shift;
     //in.get(shift ,)
     //in.getline(forwardd, ShiftSize, ' '); // gets i/p, stored in forwardd before ws
@@ -31,7 +37,7 @@ std::istream& operator>>(std::istream& in, Forward& forward) //in = user input, 
     //forward = temp; // makes forward i/p equal temp
     return in;
 
-    //in >> forward()
+
 }
 //----------------------------------------------------------------------------
 

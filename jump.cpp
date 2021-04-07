@@ -12,15 +12,25 @@ void Jump::run()
     glVertex2f(0.0,0.0);   // make start where previously left off
     glVertex2f(shift,0.0); // shifts 
     glEnd();
+    glFlush();
 }
 
 std::istream& operator>>(std::istream& in, Jump& jump)
-{
+{   
+    static char jumpp[10];
+    float shift=0.0; //initialise shift to 0
+    //Forward temp;
+    //int shiftSize[100];
+    in >> jumpp; // gets first word up to ws
+    //in.get(); // gets white space
+    in >> shift;
+    
+    /*
     const int ShiftSize = 100; // e.g 5 units forward
     static char forwardd[ShiftSize];
-    int shift=0;
+    float shift=0;
     in.get(forwardd, ShiftSize); // gets input , stored into buffer
-    shift = ShiftSize;
+    shift = ShiftSize; */
     return in;
 
 
@@ -28,15 +38,3 @@ std::istream& operator>>(std::istream& in, Jump& jump)
 }
 //----------------------------------------------------------------------------
 
-<<<<<<< HEAD
-void Jump::run()
-{
-
-}
-
-std::istream& operator>>(std::istream& in, Jump& j)
-{
-
-}
-=======
->>>>>>> 1533c1bf9e7189ebc2ac725b888e3aa0d64a0168

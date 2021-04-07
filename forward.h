@@ -13,8 +13,9 @@ public:
     void run(); // inherit virtual func run from command.h
     friend std::istream& operator>>(std::istream& in, Forward& forward); //in = cin
 private:
-    int shift;
+    float shift;
     int Prev ; // prevous position
+    int position;
 
 };
 
