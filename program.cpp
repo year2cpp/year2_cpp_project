@@ -6,36 +6,36 @@ void Program::run() {
 	//--------Teammember 1 to replace this section----------
 	if(str == "FORWARD"){
 		// find number associated with the instruction, call function that number of times
-		//forward();
+		forward.run();
 	}
 	else if (str == "LEFT"){
-		//left();
+		left.run();
 	}
 	else if (str == "RIGHT"){
-		//right();
+		right.run();
 	}
 	else if (str == "JUMP"){
-		//jump();
+		jump.run();
 	}
 	else if (str == "REPEAT"){
 		//see whats inside the brackets and perform x times
 		if(str == "FORWARD"){
-			//forward();
+			forward.run();
 		}
 		else if (str == "LEFT"){
-			//left();
+			left.run();
 		}
 		else if (str == "RIGHT"){
-			//right();
+			right.run();
 		}
 		else if (str == "JUMP"){
-			//jump();
+			jump.run();
 		}
 	}
 	else{
 		std::cout << "Invalid input instruction" << std::endl;
 	}
-	
+
 	//-------------------------------------------------------
 	//below is prereplace with ifs and using tom and awes' parts.
 	/*
@@ -49,7 +49,7 @@ void Program::run() {
 	glRotatef(20,0,0,1);								Rotate by 20 degrees
 	glBegin(GL_LINE_LOOP);								Draw the triangle again
 		glVertex3f( 0.0f, 1.0f, 0.0f);
-		glVertex3f(-1.0f,-1.0f, 0.0f);                  
+		glVertex3f(-1.0f,-1.0f, 0.0f);
 		glVertex3f( 1.0f,-1.0f, 0.0f);
 	glEnd();
 
@@ -74,4 +74,3 @@ std::istream& operator>>(std::istream& in, Program& prog)
 	return in;//returns the istream.
 	//-------------------------------------------------------
 }
-
