@@ -6,16 +6,21 @@
 
 //--------Teammember 3 to complete this section (class declaration) ----------
 
-//----------------------------------------------------------------------------
 
 class Forward: public Command //inherits public funcs, command.h
 {
 public:
-    void run(); // virtual func run 
-    friend std::istream& operator>>(std::istream& in, Forward& f); //input operator
-
+    void run(); // inherit virtual func run from command.h
+    friend std::istream& operator>>(std::istream& in, Forward& forward); //in = cin
+private:
+    float shift;
+    int Prev ; // prevous position
+    int position;
 
 };
+
+//----------------------------------------------------------------------------
+
 
 
 #endif /* FORWARD_H_ */
