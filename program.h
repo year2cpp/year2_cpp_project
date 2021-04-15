@@ -18,6 +18,11 @@ public:
 	//--------Teammember 1 to complete this section (class declaration) ----------
 	std::string str;
 	float distance;
+	/*Repeat repeatObj;*/
+	Forward forwardObj;
+	Left leftObj;
+	Right rightObj;
+	Jump jumpObj;
 	//----------------------------------------------------------------------------
 
 };

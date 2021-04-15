@@ -6,30 +6,30 @@ void Program::run() {
 	//--------Teammember 1 to replace this section----------
 	if(str == "FORWARD"){
 		// find number associated with the instruction, call function that number of times
-		forward.run();
+		forwardObj.run();
 	}
 	else if (str == "LEFT"){
-		left.run();
+		leftObj.run();
 	}
 	else if (str == "RIGHT"){
-		right.run();
+		rightObj.run();
 	}
 	else if (str == "JUMP"){
-		jump.run();
+		jumpObj.run();
 	}
 	else if (str == "REPEAT"){
 		//see whats inside the brackets and perform x times
 		if(str == "FORWARD"){
-			forward.run();
+			forwardObj.run();
 		}
 		else if (str == "LEFT"){
-			left.run();
+			leftObj.run();
 		}
 		else if (str == "RIGHT"){
-			right.run();
+			rightObj.run();
 		}
 		else if (str == "JUMP"){
-			jump.run();
+			jumpObj.run();
 		}
 	}
 	else{
@@ -70,7 +70,9 @@ std::istream& operator>>(std::istream& in, Program& prog)
 		in.get();//retrieves all the characters before the new line
 	}
 	std::getline(in,prog.str, ' ');//gets all the characters before the space and puts into prog.str
+	std::cout << "This is the string that istream gets: " << prog.str << std::endl;
 	in >> prog.distance;//puts the rest into prog.distance.
+	std::cout << "This is the distance: "<< prog.distance << std::endl;
 	return in;//returns the istream.
 	//-------------------------------------------------------
 }

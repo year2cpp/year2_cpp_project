@@ -1,17 +1,17 @@
-#ifndef REPEAT_H_
+/*#ifndef REPEAT_H_
 #define REPEAT_H_
 
 #include "command.h"
-#include "program.h"
+#include "program.h"*/
 
 //--------Teammember 2 to complete this section (class declaration) ----------
-class repeat {
+/*class Repeat {
 private:
     Program prog;
 public:
     void run();
-    friend void operator>>(istream& in);
-}
+    /*friend void operator>>(istream& in);
+};/*
 //----------------------------------------------------------------------------
 
 #endif /* REPEAT_H_ */
