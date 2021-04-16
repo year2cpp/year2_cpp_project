@@ -5,8 +5,11 @@
 //----------------------------------------------------------------------------
 void Right::run()
 {
+    glPushMatrix();
+    //glTranslatef(distance, 0.0,0.0);
     // reset angle , no need reset
-    glRotatef(angle,0,0,1); // make rotate right
+    glRotatef(-angle,0,0,1.0); // make rotate right
+    //glTranslatef(-distance, 0.0,0.0);
 
 }
 

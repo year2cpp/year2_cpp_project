@@ -10,7 +10,7 @@ public:
     void run(); // virtual func run 
     friend std::istream& operator>>(std::istream& in, Jump& jump); //input operator
 private:
-    float shift;
+    float distance;
 
 };
 //----------------------------------------------------------------------------
