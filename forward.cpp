@@ -1,11 +1,6 @@
 #include "forward.h"
 #include <string>
 
-struct Distances // to store all distances 
-{
-	float distanceSizes; // data holds value of distance sizes
-	struct node * next; // node pointer
-};
 
 
 //--------Teammember 3 to complete this section (class definition) ----------
