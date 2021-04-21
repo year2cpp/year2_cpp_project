@@ -6,45 +6,8 @@ void Program::run(){
 	//--------Teammember 1 to replace this section----------
 	for (int i = 0; i < cmds.size(); i++)
 	{
-		cmds.at(i);
+		cmds.at(i)->run();
 	}
-	
-	
-	
-	
-	/*
-	-----------------------------------------------------------------------------------
-	if(str == "FORWARD"){
-		// find number associated with the instruction, call function that number of times
-		
-	}
-	else if (cmds == "LEFT"){
-		
-	}
-	else if (str == "RIGHT"){
-		
-	}
-	else if (str == "JUMP"){
-		
-	}
-	else if (str == "REPEAT"){
-		//see whats inside the brackets and perform x times
-		if(str == "FORWARD"){
-			
-		}
-		else if (str == "LEFT"){
-			
-		}
-		else if (str == "RIGHT"){
-			
-		}
-		else if (str == "JUMP"){
-			
-		}
-	}
-	else{
-		std::cout << "Invalid input instruction" << std::endl;
-	}*/
 
 	//-------------------------------------------------------
 }
@@ -52,10 +15,11 @@ void Program::run(){
 std::istream& operator>>(std::istream& in, Program& prog)
 {
 	//--------Teammember 1 to complete this section----------
-	Command* left = new Command;
-	Command* right = new Command;
-	Command* jump = new Command;
-	Command* forward = new Command;
+	Repeat repeat;
+	Command* left;
+	Command* right;
+	Command* jump;
+	Command* forward;//took out new keyword and error went.
 	while (in.peek() == '\n'){//looks until next line is found.
 		in.get();//retrieves all the characters before the new line
 		std::getline(in,prog.str, ' ');//gets all the characters before the space and puts into prog.str
@@ -83,6 +47,9 @@ std::istream& operator>>(std::istream& in, Program& prog)
 			{
 				prog.cmds.push_back(right);
 			}
+		}
+		else if (prog.str == "REPEAT"){
+			repeat.run();
 		}
 	}
 	//while(in.good()){ not sure if I need this but peipei suggested it.
