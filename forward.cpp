@@ -12,6 +12,7 @@ void Forward::run()
     glVertex3f(0.0,0.0,0.0);   //vertex 3D as float
     glVertex3f(value,0.0,0.0); // e.g move 5 units 
     glEnd();
+    glTranslatef(value,0.0,0.0); // shift cursor to the end of line loop by the value
     //glFlush(); // send to screen
     
 }

@@ -7,7 +7,7 @@
 void Left::run()
 {  
     glPushMatrix();
-    glTranslatef(1,0,0);
+    //glTranslatef(1,0,0);
     glRotatef(value,0.0,0.0,1.0); // make rotate left, angle is +ve in spec
 
     //glPopMatrix(); // maybe stop this too, as function may keep rotate
