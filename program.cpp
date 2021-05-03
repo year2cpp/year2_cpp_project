@@ -25,28 +25,24 @@ std::istream &operator>>(std::istream &in, Program &prog)
 		if (prog.str == "FORWARD")
 		{
 			Command *obj = new Forward();
-			in >> obj->value;
+			
 			prog.cmds.push_back(obj);
 		}
 		else if (prog.str == "JUMP")
 		{
 
 			Command *obj = new Jump();
-			in >> obj->value;
 			prog.cmds.push_back(obj);
 		}
 		else if (prog.str == "LEFT")
 		{
-
 			Command *obj = new Left();
-			in >> obj->value;
 			prog.cmds.push_back(obj);
 		}
 		else if (prog.str == "RIGHT")
 		{
 
 			Command *obj = new Right();
-			in >> obj->value;
 			prog.cmds.push_back(obj);
 		}
 		else if (prog.str == "REPEAT")
