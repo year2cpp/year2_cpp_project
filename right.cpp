@@ -8,9 +8,10 @@ void Right::run()
     glPushMatrix();
     //glTranslatef(distance, 0.0,0.0);
     // reset angle , no need reset
+    glTranslatef(-1,0,0);
     glRotatef(-value,0.0,0.0,1.0); // make rotate right
     //glTranslatef(-distance, 0.0,0.0);
-
+    
 }
 
 std::istream& operator>>(std::istream& in, Right& right)

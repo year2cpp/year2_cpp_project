@@ -17,8 +17,7 @@ public:
 	void run() override;
 	//--------Teammember 1 to complete this section (class declaration) ----------
 	std::string str;
-	float distance;
-	~Program();
+	virtual ~Program();
 	friend std::istream& operator>>(std::istream&, Program& prog);
 	
 	//----------------------------------------------------------------------------

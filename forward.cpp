@@ -10,10 +10,10 @@ void Forward::run()
     
     glBegin(GL_LINE_LOOP);
     glVertex3f(0.0,0.0,0.0);   //vertex 3D as float
-    glVertex3f(value,0.0,0.0); // e.g move 5 units
+    glVertex3f(value,0.0,0.0); // e.g move 5 units 
     glEnd();
-    glFlush(); // send to screen
-
+    //glFlush(); // send to screen
+    
 }
 
 std::istream& operator>>(std::istream& in, Forward& forward) //in = user input, cin >> , e.g FORWARD 5, save into forward variables?
