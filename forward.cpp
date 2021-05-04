@@ -27,13 +27,6 @@ std::istream& operator>>(std::istream& in, Forward& forward) //in = user input, 
     //in >> forwardd; // gets first word up to ws
     //in.get(); // gets white space
     in >> forward.value; //using value from command file
-    //forward.distanceTravel+= forward.distance;
-
-    //in.get(shift ,)
-    //in.getline(forwardd, ShiftSize, ' '); // gets i/p, stored in forwardd before ws
-    //in.getline(shift, ShiftSize, ' '); // gets i/p, stored in forwardd before ws
-    //Forward temp(buffer);  //new obj temp = bufer , buffer = i/p
-    //forward = temp; // makes forward i/p equal temp
 
 
     return in;

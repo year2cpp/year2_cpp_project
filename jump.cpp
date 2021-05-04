@@ -4,7 +4,7 @@
 void Jump::run()
 {
  
-    glTranslatef(value,0.0,1.0);
+    glTranslatef(value,0.0,1.0); // works even without drawing line
     // translates the cursor on the screen one unit to the right from the current position
 }
 
