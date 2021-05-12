@@ -18,7 +18,7 @@ Program::~Program(){
 std::istream &operator>>(std::istream &in, Program &prog)
 {
 	//--------Teammember 1 to complete this section----------
-	//Repeat repeat;
+	
 	//
 	while (in.good())
 	{									 //looks until next line is found.
@@ -55,7 +55,9 @@ std::istream &operator>>(std::istream &in, Program &prog)
 		}
 		else if (prog.str == "REPEAT")
 		{
-			//repeat.run();
+			Repeat *obj = new Repeat();
+			in >> *obj;
+			prog.cmds.push_back(obj);
 		}
 	}
 	//while(in.good()){ not sure if I need this but peipei suggested it.
