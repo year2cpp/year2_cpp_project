@@ -16,3 +16,13 @@ void operator>>(istream& in) {
 }
 
 */
+#include "repeat.h"
+
+void Repeat::run(){
+
+
+}
+
+std::istream& operator>>(std::istream& in, Repeat& rpt){
+
+}
