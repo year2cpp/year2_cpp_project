@@ -9,7 +9,7 @@ void Repeat::run(){
 }
 
 std::istream& operator>>(std::istream& in, Repeat& rpt){
- std::string tmpInputVar; //for square bracket in beginnging
+ std::string tmpInputVar; //for square bracket in beginning 
  in >> rpt.value >> tmpInputVar;
  in >> rpt.prog;
  return in;
