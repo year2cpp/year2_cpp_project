@@ -18,16 +18,8 @@ void Forward::run()
 }
 
 std::istream& operator>>(std::istream& in, Forward& forward) //in = user input, cin >> , e.g FORWARD 5, save into forward variables?
-{ // new Forward obj, gives forward access to class
-      //static char forwardd[10];
-    //static float forwardSize[10];
- 
- 
-    //int shiftSize[100];
-    //in >> forwardd; // gets first word up to ws
-    //in.get(); // gets white space
+{ 
     in >> forward.value; //using value from command file
-
 
     return in;
 }
