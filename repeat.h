@@ -10,7 +10,7 @@ private:
     Program prog;
 public:
     void run();
-    friend void operator>>(std::istream& in, Repeat& r);
+    friend std::istream& operator>>(std::istream& in, Repeat& rpt);
 };
 //----------------------------------------------------------------------------
 
