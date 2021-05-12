@@ -3,6 +3,12 @@
 
 void Left::run()
 {  
+    if(value<0)
+    {
+        std::cerr << "Left value is negative" << std::endl;
+        exit(0);
+    }
+
     glPushMatrix();
     glRotatef(value,0.0,0.0,1.0); 
 }
