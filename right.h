@@ -3,15 +3,11 @@
 
 #include "command.h"
 
-//--------Teammember 3 to complete this section (class declaration) ----------
-
-//----------------------------------------------------------------------------
-
-class Right: public Command //inherits public funcs, command.h
+class Right: public Command 
 {
 public:
-    void run(); // virtual func run 
-    friend std::istream& operator>>(std::istream& in, Right& r); //input operator
+    void run(); 
+    friend std::istream& operator>>(std::istream& in, Right& r); 
 };
 
 

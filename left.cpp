@@ -1,21 +1,14 @@
 #include "left.h"
 
 
-//--------Teammember 3 to complete this section (class definition) ----------
-
-//----------------------------------------------------------------------------
 void Left::run()
 {  
     glPushMatrix();
-    glRotatef(value,0.0,0.0,1.0); // make rotate left, angle is +ve in spec
-
+    glRotatef(value,0.0,0.0,1.0); 
 }
 
-std::istream& operator>>(std::istream& in, Left& left) //obj left type Left ,new struct for it
+std::istream& operator>>(std::istream& in, Left& left) 
 {
-
     in >> left.value; 
-    
     return in;
-
 }

@@ -3,15 +3,11 @@
 
 #include "command.h"
 
-//--------Teammember 3 to complete this section (class declaration) ----------
-class Jump: public Command //inherits public funcs, command.h
+class Jump: public Command 
 {
 public:
-    void run(); // virtual func run 
-    friend std::istream& operator>>(std::istream& in, Jump& jump); //input operator
+    void run(); 
+    friend std::istream& operator>>(std::istream& in, Jump& jump); 
 };
-//----------------------------------------------------------------------------
-
-
 
 #endif /* JUMP_H_ */

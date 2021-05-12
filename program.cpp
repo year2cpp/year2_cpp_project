@@ -3,13 +3,10 @@
 
 void Program::run()
 {
-	//--------Teammember 1 to replace this section----------
 	for (int i = 0; i < cmds.size(); i++)
 	{
 		cmds.at(i)->run();
 	}
-
-	//-------------------------------------------------------
 }
 Program::~Program(){
 
@@ -17,16 +14,9 @@ Program::~Program(){
 
 std::istream &operator>>(std::istream &in, Program &prog)
 {
-	//--------Teammember 1 to complete this section----------
-	
-	//
 	while (in.good())
-	{									 //looks until next line is found.
-		
+	{									
 		in >> prog.str;
-		//in.get();						 //retrieves all the characters before the new line
-		 //gets all the characters before the space and puts into prog.str
-		//in >> prog.distance;//puts the rest into prog.distance.
 		if (prog.str == "FORWARD")
 		{
 			Forward *obj = new Forward();
@@ -60,9 +50,5 @@ std::istream &operator>>(std::istream &in, Program &prog)
 			prog.cmds.push_back(obj);
 		}
 	}
-	//while(in.good()){ not sure if I need this but peipei suggested it.
-
-	//}
-	return in; //returns the istream.
-			   //-------------------------------------------------------
+	return in; 
 }

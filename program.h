@@ -15,20 +15,12 @@ class Program : public Command {
 
 public:
 	void run() override;
-	//--------Teammember 1 to complete this section (class declaration) ----------
 	std::string str;
 	virtual ~Program();
 	friend std::istream& operator>>(std::istream&, Program& prog);
-	
-	//----------------------------------------------------------------------------
-
-
 private:
 	std::vector<Command*> cmds;
-	
 };
-
-
 std::istream& operator>>(std::istream& in, Program& prog);
 
 #endif /* PROGRAM_H_ */
