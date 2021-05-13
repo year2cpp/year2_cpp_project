@@ -16,6 +16,7 @@ std::istream &operator>>(std::istream &in, Program &prog)
 {
 	if(!in.good()){
 		std::cerr << "Erroneous input" << std::endl;
+		exit(0);
 	}
 	while (in.good())
 	{					
