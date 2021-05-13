@@ -2,6 +2,11 @@
 
 void Repeat::run(){
 
+     if (value < 1) {
+       std::cerr << "Error: number of repeats less than 1";
+       exit(1);
+     }
+
       try {
         for (int i = 0; i < value ; i++) {
             prog.run();
