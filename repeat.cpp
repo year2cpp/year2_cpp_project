@@ -19,12 +19,14 @@ std::istream& operator>>(std::istream& in, Repeat& rpt){
         in >> rpt.value >> tmpInputVar;
     } catch(...) {
         std::cerr << "Error";
+        exit(1);
     }
 
     try {
       in >> rpt.prog;
     } catch(...) {
         std::cerr << "Error";
+        exit(1);
     }
 
     return in;
