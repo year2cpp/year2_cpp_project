@@ -8,6 +8,12 @@ void Jump::run()
         exit(0);
     }
 
+    if(value == ' ') 
+    {
+        std::cerr << "Jump value is empty" << std::endl;
+        exit(0);
+    } 
+
     glTranslatef(value,0.0,1.0); 
 
 }
@@ -15,6 +21,12 @@ void Jump::run()
 std::istream& operator>>(std::istream& in, Jump& jump)
 {   
     in >> jump.value;
+
+    if(in.fail())
+    {
+        std::cerr << "Jump value is not a float" << std::endl;
+        exit(0);
+    }
     return in;
 }
 
