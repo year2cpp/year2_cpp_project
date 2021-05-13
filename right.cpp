@@ -24,7 +24,7 @@ std::istream& operator>>(std::istream& in, Right& right)
 
     if(in.fail())
     {
-        std::cerr << "Right value is not a float" << std::endl;
+        std::cerr << "Right value is an erroneous value" << std::endl;
         exit(0);
     }
     return in;

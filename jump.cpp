@@ -24,7 +24,7 @@ std::istream& operator>>(std::istream& in, Jump& jump)
 
     if(in.fail())
     {
-        std::cerr << "Jump value is not a float" << std::endl;
+        std::cerr << "Jump value is an erroneous value" << std::endl;
         exit(0);
     }
     return in;

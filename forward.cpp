@@ -32,7 +32,7 @@ std::istream& operator>>(std::istream& in, Forward& forward)
 
     if(in.fail())
     {
-        std::cerr << "Forward value is not a float" << std::endl;
+        std::cerr << "Forward value is an erroneous value" << std::endl;
         exit(0);
     }
 
